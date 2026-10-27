@@ -1,0 +1,26 @@
+{
+  "name": "CS101 Midterm Scratchpad",
+  "image": "mcr.microsoft.com/devcontainers/python:3.11",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ritwickdey.LiveServer",
+        "ms-python.python",
+        "ms-toolsai.jupyter",
+        "ms-toolsai.jupyter-keymap",
+        "ms-toolsai.jupyter-renderers"
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/local/bin/python",
+        "python.terminal.activateEnvironment": true,
+        "jupyter.askForKernelRestart": false,
+        "notebook.defaultFormatter": "ms-python.python",
+        "workbench.editorAssociations": {
+          "*.ipynb": "jupyter-notebook"
+        }
+      }
+    }
+  },
+  "postCreateCommand": "python -m pip install --upgrade pip ipykernel jupyter && python -m ipykernel install --user --name python3 --display-name 'Python 3'",
+  "remoteUser": "vscode"
+}
