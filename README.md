@@ -7,3 +7,4 @@ Open this repository directly in **GitHub Codespaces**.
 - You can:
   - right-click an HTML file and open with Live Server,
   - open and run Jupyter notebook cells directly.
+ 
